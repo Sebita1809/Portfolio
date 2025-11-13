@@ -1,0 +1,500 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0A0A0A;
+}
+
+header{
+    top: 0;
+    display: flex;
+    position: sticky;
+    width: 100%;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E1E1E;
+    z-index: 10;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    color : white;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+a{
+    text-decoration: none;
+    color: #F7E27D
+}
+.traducir_button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.traducir{
+    width: 2rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1{
+    color: #F7E27D;
+    font-size: 4rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+p{
+    color: #D9D9D9;
+}
+.home{
+    margin-top: 2rem;
+}
+.background{
+    background-image: url(img/fondo.png);
+    background-size: cover;
+    filter: blur(2px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.personal_card{
+    position: relative;
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.personal_card_information{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+    z-index: 1;
+}
+.personal_card_information h1{
+    font-size: 6rem;
+}
+.personal_card_information p{
+    font-size: 2rem;
+}
+.profile_img{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    z-index: 1;
+}
+.personal_card h2{
+    margin-top: 3rem;
+    margin-bottom: -2rem;
+    flex-basis: 100%;
+    text-align: center;
+    font-family: Handjet, sans-serif;
+    color: #d9d9d9c8;
+    z-index: 1;
+}
+.languages_container {
+    position: relative;
+    display: flex;
+    gap: 24px;
+    padding: 20px;
+    border-radius: 25px;
+    background: #3c3c3c4e;
+    overflow: hidden;
+}
+.languages_card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    font-family: Oswald, sans-serif;
+    font-size: 1.5rem;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #1E1E1E;
+    box-shadow: #F7E27D 0px 0px 10px;
+}
+.languages_card:hover{
+    box-shadow: #F7E27D 0px 0px 20px;
+}
+.languages_card img{
+    width: 80px;
+    height: 80px;
+}
+.aboutMe{
+    display: flex;
+}
+.aboutMe{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    align-items: center;
+    width: 60%;
+    align-self: center;
+}
+.aboutMe h2{
+    font-family: Handjet, sans-serif;
+    font-size: 3rem;
+    margin: 1rem;
+    color: #5a5858;
+}
+.aboutMe p{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #D9D9D9;
+    font-family: Jersey 10, sans-serif;
+    line-height: 2rem;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+}
+.projects h2{
+    font-family: Handjet, sans-serif;
+    font-size: 3rem;
+    margin: 1rem;
+    color: #5a5858;
+    text-align: center;
+}
+.projects_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    width: 400px;
+    height: 500px;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 20px;
+    align-self: center;
+    background-color: #1E1E1E;
+    box-shadow: #fff 0px 0px 10px;
+    transition: all 0.4s ease;
+}
+.projects_card:hover{
+    box-shadow: #fff 0px 0px 30px;
+    cursor: pointer;
+}
+.projects_card:nth-child(2){
+    box-shadow: #3C8A8A 0px 0px 10px;
+    gap: 0px;
+}
+.projects_card:nth-child(2):hover{
+    box-shadow: #3C8A8A 0px 0px 30px;
+    cursor: pointer;
+}
+.projects_card_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+}
+.projects_card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+.projects_card h3{
+    color: #D9D9D9;
+    font-size: 3rem;
+    font-family: 'Handjet', sans-serif;
+}
+.projects_card p{
+    color: #D9D9D9;
+    font-size: 1.5rem;
+    font-family: 'Handjet', sans-serif;
+    margin-top: 1.5rem;
+}
+.contactMe{
+    margin-top: 10rem;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.contactMe > h2{
+    flex:0 0 100%;
+    text-align: center;
+    padding:1rem 1.5rem;
+    background-color: #0A0A0A;
+    font-family: Handjet, sans-serif;
+    font-size: 3rem;
+    color: #5a5858;
+}
+
+.contactMe_form,
+.contactMe_social{
+    flex:1 1 50%;
+    min-width:320px;          
+}
+
+.contactMe_form{
+    background:#1E1E1E;
+    padding:2rem;
+}
+
+.contactMe form{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1rem 1.5rem;
+    align-items:start;
+}
+
+.contactMe form > label,
+.contactMe form > input{
+    grid-column:1;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+}
+
+.contactMe_form_message{
+    grid-column:2;
+    display:flex;
+    flex-direction:column;
+    margin-top: -11.5rem;
+}
+.contactMe_form_message > label{
+    color:#fff;
+    font-size:1.5rem;
+    font-family:'Oswald', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.contactMe input,
+.contactMe textarea{
+    width:100%;
+    padding:1rem;
+    font-size:1.5rem;
+    background:#5a5858;
+    border:none;
+    border-radius:10px;
+    color:#fff;
+}
+
+.contactMe textarea{
+    min-height:12rem;
+    resize:vertical;
+}
+
+.contactMe button{
+    grid-column:1 / -1;
+    justify-self:center;
+    width:20rem;
+    height:3rem;
+    margin-top:1rem;
+    font-size:1.25rem;
+    font-family:'Oswald', sans-serif;
+    background:#F7E27D;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.contactMe_social{
+    background:#1E1E1E;
+    color:#1E1E1E;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    padding:2rem;
+}
+.contactMe_social p {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+.contactMe_social img{
+    width: 100px;
+    height:100px;
+}
+.social_icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+.linkedin :hover{
+    filter: drop-shadow(0px 0px 10px #3C8A8A);
+}
+.gitHub :hover{
+    filter: drop-shadow(0px 0px 10px #40403d);
+}
+.projects_card_active {
+    box-shadow: 0 0 25px #F7E27D;
+    background-color: #D9D9D9; 
+}
+/* ====== TABLET (<= 992px) ====== */
+@media (max-width: 992px) {
+  /* --- Sección Home --- */
+.personal_card_information {
+    width: 80%;
+    text-align: center;
+    align-items: center;
+}
+.personal_card_information h1 {
+    font-size: 4rem;
+}
+.personal_card_information p {
+    font-size: 1.4rem;
+}
+.profile_img {
+    width: 250px;
+    height: 250px;
+}
+.languages_container{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  /* --- About --- */
+.aboutMe {
+    width: 80%;
+}
+
+  /* --- Projects --- */
+.projects_card_container {
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.projects_card {
+    width: 280px;
+    height: 550px;
+}
+
+  /* --- Contact --- */
+.contactMe_form,
+.contactMe_social {
+    flex: 1 1 100%;
+}
+.contactMe form {
+    grid-template-columns: 1fr;
+}
+.contactMe_form_message {
+    grid-column: 1;
+    margin-top: 0;
+}
+.contactMe button {
+    width: 100%;
+}
+.contactMe_social p {
+    font-size: 2rem;
+}
+.social_icon {
+    gap: 2rem;
+}
+.contactMe_social img {
+    width: 80px;
+    height: 80px;
+}
+}
+
+/* ====== CELULAR (<= 600px) ====== */
+@media (max-width: 600px) {
+  /* --- Header --- */
+nav {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+  /* --- Home --- */
+.personal_card_information {
+    width: 100%;
+    text-align: center;
+}
+.personal_card_information h1 {
+    font-size: 2.4rem;
+}
+.personal_card_information p {
+    font-size: 1.1rem;
+}
+.profile_img {
+    width: 180px;
+    height: 180px;
+}
+
+  /* --- Lenguajes --- */
+.languages_container {
+    gap: 12px;
+}
+.languages_card {
+    width: 110px;
+    height: 120px;
+    font-size: 1rem;
+}
+.languages_card img {
+    width: 56px;
+    height: 56px;
+}
+
+  /* --- About --- */
+.aboutMe {
+    width: 90%;
+}
+.aboutMe h2 {
+    font-size: 2rem;
+}
+.aboutMe p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+
+  /* --- Projects --- */
+.projects_card_container {
+    flex-direction: column;
+    gap: 20px;
+}
+.projects_card {
+    width: 90%;
+    height: auto;
+}
+.projects_card h3 {
+    font-size: 2rem;
+}
+
+  /* --- Contact --- */
+.contactMe {
+    flex-direction: column;
+}
+.contactMe > h2 {
+    font-size: 2rem;
+    padding: 1rem;
+}
+.contactMe_form {
+    padding: 1.25rem;
+}
+.contactMe input,
+.contactMe textarea {
+    font-size: 1.1rem;
+}
+.contactMe_social p {
+    font-size: 1.4rem;
+}
+.contactMe_social img {
+    width: 60px;
+    height: 60px;
+}
+.social_icon {
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+}
